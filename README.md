@@ -25,7 +25,8 @@ _jQuery_
 | Behavior: this program should| Inputs Example: when it receives | Output: it should return|
 |------------------|:-------------:|------:|
 |return 1 if given 1|1|1|
-|not process non-numerical characters|"a"|"Please enter a positive whole number"|
+|not process non-numerical characters|"a"|"Please enter a whole number"|
+|not process negative numbers|-1|"Please enter a positive whole number"|
 |return a list of every whole number up through the given number|2|1, 2|
 |return "Ping" in said list if divisible by 3 and not 5 |3|"Ping"|
 |return "Pong" in said list if divisible by 5 and not 3|5|"Pong"|
