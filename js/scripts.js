@@ -1,7 +1,7 @@
 //back
-function isNumber(input) {
+function isPositiveNumber(input) {
 
-  if (isNaN(input)) {
+  if (isNaN(input) || input < 1) {
     return false;
   } else {
     return true;
@@ -10,10 +10,10 @@ function isNumber(input) {
 
 function pingPong(input) {
 
-  if (isNumber(input)) {
+  if (isPositiveNumber(input)) {
     return input;
   } else {
-    return "Please enter a number";
+    return "Please enter a positive whole number";
   }
 };
 
