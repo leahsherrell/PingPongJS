@@ -8,23 +8,31 @@ function isPositiveNumber(input) {
   }
 };
 
-function pingPong(input) {
 
+
+function pingPong(input) {
+  var output = [];
   if (isPositiveNumber(input)) {
-    return input;
+    var num = parseInt(input);
+    for (i = 0; i <= num; i++) {
+      var x = num --;
+      output.push(x);
+    }
   } else {
-    return "Please enter a positive whole number";
+    output.push("Please enter a positive number");
   }
+  return output;
 };
 
 //front
 $(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-
     var userInput = $("input").val();
     var result = pingPong(userInput);
 
-    $("ul").text(result);
+    $(result).each(function (index) {
+        $('ul').append("<li>" + result[index] + "</li>");
+    });
   });
 });
