@@ -8,6 +8,6 @@ $(function() {
 
     var userInput = parseInt($("input").val());
 
-    console.log(userInput);
+    $("ul").append(userInput);
   });
 });
