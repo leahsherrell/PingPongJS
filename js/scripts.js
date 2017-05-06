@@ -9,7 +9,7 @@ function pingPong(input) {
         output.push('pong');
       } else if (i % 3 === 0) {
         output.push('ping');
-      } else if (i % 3) {
+      } else if (i) {
         output.push(i);
       }
   }
