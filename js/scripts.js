@@ -2,24 +2,19 @@
 function isPositiveNumber(input) {
 
   if (isNaN(input) || input < 1) {
-    return false;
+    return output.push("Please enter a positive number");;
   } else {
     return true;
   }
 };
 
 
-
 function pingPong(input) {
   var output = [];
-  if (isPositiveNumber(input)) {
-    var num = parseInt(input);
-    for (i = 0; i <= num; i++) {
-      var x = num --;
-      output.push(x);
-    }
-  } else {
-    output.push("Please enter a positive number");
+    for (i = 1; i <= input; i++) {
+      if (i % 3) {
+        output.push(i);
+      }
   }
   return output;
 };
