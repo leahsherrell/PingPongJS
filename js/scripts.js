@@ -21,8 +21,10 @@ $(function() {
   $("form").submit(function(event) {
     event.preventDefault();
     var userInput = $("input").val();
+    $("input").val("");
     var result = pingPong(userInput);
 
+    $('ul').empty();
     $(result).each(function (index) {
         $('ul').append("<li>" + result[index] + "</li>");
     });
