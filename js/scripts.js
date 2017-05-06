@@ -12,7 +12,9 @@ function isPositiveNumber(input) {
 function pingPong(input) {
   var output = [];
     for (i = 1; i <= input; i++) {
-      if (i % 3) {
+      if (i % 3 == 0) {
+        output.push('ping');
+      } else if (i % 3) {
         output.push(i);
       }
   }
