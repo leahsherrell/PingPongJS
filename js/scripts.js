@@ -3,11 +3,11 @@
 function pingPong(input) {
   var output = [];
     for (i = 1; i <= input; i++) {
-      if (i % 3 == 0 && i % 5 == 0) {
+      if (i % 3 === 0 && i % 5 === 0) {
         output.push('ping pong');
-      } else if (i % 5 == 0) {
+      } else if (i % 5 === 0) {
         output.push('pong');
-      } else if (i % 3 == 0) {
+      } else if (i % 3 === 0) {
         output.push('ping');
       } else if (i % 3) {
         output.push(i);
