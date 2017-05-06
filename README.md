@@ -2,7 +2,7 @@
 
 #### _Intro Solo Project 3 @Epicodus, 05.03.2017_
 
-#### By _** Leah Sherrell**_
+#### By _**Leah Sherrell**_
 
 ## Description
 
@@ -18,7 +18,7 @@ Displays positive whole numbers up through user-inputted number with three excep
 
 ## Technologies Used
 
-_JavaScript_
+_JavaScript_ ,
 _jQuery_
 
 ## Specifications for BDD
