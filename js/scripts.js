@@ -12,7 +12,7 @@ function positiveNumber(input) {
 function pingPong(input) {
   var output = [];
   if (!positiveNumber(input)) {
-    output.push("Please enter a positive whole snumber");
+    output.push("Please enter a positive whole number.");
     return output;
   }
 
